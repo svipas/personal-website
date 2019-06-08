@@ -22,6 +22,7 @@ import harbortouch from './assets/harbortouch.svg';
 import telia from './assets/telia.svg';
 import slk from './assets/slk.svg';
 import { Footer } from './components/Footer';
+import { howOldAmI } from './utils';
 
 export function App() {
   return (
@@ -41,7 +42,7 @@ export function App() {
       <Main>
         <Article>
           <P>
-            I'm 23 years old and live in Lithuania, Vilnius. I'm a self-taught{' '}
+            I'm {howOldAmI()} years old and live in Lithuania, Vilnius. I'm a self-taught{' '}
             <Text bold>Full Stack JavaScript Developer</Text> with{' '}
             <Text bold>Professional bachelor's degree in Computer Network Administration</Text>. I really love and feel
             a lot of passion while coding because I like to solve problems as well as create new functionality.
