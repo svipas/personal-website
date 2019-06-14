@@ -1,17 +1,19 @@
 {
   "extends": ["eslint:recommended", "plugin:react/recommended"],
   "parserOptions": {
-    "ecmaVersion": 6,
+    "ecmaVersion": 8,
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
     }
   },
   "env": {
-    "browser": true
+    "browser": true,
+    "node": true
   },
   "rules": {
     "react/prop-types": "off",
-    "react/no-unescaped-entities": "off"
+    "react/no-unescaped-entities": "off",
+    "no-console": "off"
   }
 }
