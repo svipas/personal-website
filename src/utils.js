@@ -6,7 +6,6 @@ export function howOldAmI() {
   if (currentDate.getMonth() < birthDate.getMonth()) {
     return yearsDiff - 1;
   }
-
   if (currentDate.getDate() < birthDate.getDate()) {
     return yearsDiff - 1;
   }
