@@ -30419,7 +30419,7 @@ function App() {
     height: 28
   }))), _react.default.createElement(_Main.Main, null, _react.default.createElement(_Article.Article, null, _react.default.createElement(_Paragraph.P, null, "I'm ", (0, _utils.howOldAmI)(), " years old and live in Lithuania, Vilnius. I'm a self-taught", ' ', _react.default.createElement(_Text.Text, {
     bold: true
-  }, "Full Stack JavaScript Developer"), " with", ' ', _react.default.createElement(_Text.Text, {
+  }, "Full Stack Developer"), " with", ' ', _react.default.createElement(_Text.Text, {
     bold: true
   }, "Professional bachelor's degree in Computer Network Administration"), ". I really love and feel a lot of passion while coding because I like to solve problems as well as create new functionality. Programming is a part of art where I can express myself.")), _react.default.createElement(_Article.Article, null, _react.default.createElement(_Headings.H2, {
     margin: "0"
@@ -30502,7 +30502,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51605" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52054" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
