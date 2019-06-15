@@ -5,7 +5,7 @@ const Parcel = require('parcel-bundler');
 
 (async function main() {
   // Remove dist dir
-  const distPath = path.join(process.cwd(), 'dist');
+  const distPath = path.resolve('dist');
   if (fs.existsSync(distPath)) {
     fs.readdirSync(distPath).forEach(file => {
       const filePath = path.join(distPath, file);
@@ -16,7 +16,7 @@ const Parcel = require('parcel-bundler');
 
   // Bundle application
   process.env.NODE_ENV = 'production';
-  await new Parcel(path.join(process.cwd(), 'src/index.html'), {
+  await new Parcel(path.resolve('src/index.html'), {
     outDir: 'dist',
     outFile: 'index.html',
     publicUrl: './',
@@ -27,7 +27,7 @@ const Parcel = require('parcel-bundler');
   }).bundle();
 
   // Copy CNAME to dist dir
-  fs.copyFileSync(path.join(process.cwd(), 'CNAME'), path.join(distPath, 'CNAME'));
+  fs.copyFileSync(path.resolve('CNAME'), path.join(distPath, 'CNAME'));
 
   // Publish to gh-pages branch
   ghPages.publish(distPath, err => {
