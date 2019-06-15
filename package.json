@@ -5,9 +5,10 @@
   "repository": "https://github.com/svipas/personal-website",
   "license": "MIT",
   "scripts": {
+    "lint": "eslint src",
     "start": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html --public-url ./",
-    "deploy": "node scripts/deploy.js"
+    "deploy": "yarn lint && node scripts/deploy.js"
   },
   "dependencies": {
     "react": "^16.8.6",
