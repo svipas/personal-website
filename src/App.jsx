@@ -42,10 +42,9 @@ export function App() {
       <Main>
         <Article>
           <P>
-            I'm {howOldAmI()} years old and live in Lithuania, Vilnius. I'm a self-taught{' '}
-            <Text bold>Full Stack Developer</Text> with{' '}
-            <Text bold>Professional bachelor's degree in Computer Network Administration</Text>. I really love and feel
-            a lot of passion while coding because I like to solve problems as well as create new functionality.
+            I'm {howOldAmI()} years old and live in Lithuania. I'm a self-taught <Text bold>Full Stack Developer</Text>{' '}
+            with <Text bold>Professional bachelor's degree in Computer Network Administration</Text>. I really love and
+            feel a lot of passion while coding because I like to solve problems as well as create new functionality.
             Programming is a part of art where I can express myself.
           </P>
         </Article>
