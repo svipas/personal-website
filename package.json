@@ -1,8 +1,8 @@
 {
   "private": true,
   "name": "personal-website",
+  "author": "svipas",
   "repository": "https://github.com/svipas/personal-website",
-  "author": "svipas <benas.svipas@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "parcel ./src/index.html",
