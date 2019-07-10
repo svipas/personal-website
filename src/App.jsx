@@ -23,6 +23,7 @@ import telia from './assets/telia.svg';
 import slk from './assets/slk.svg';
 import { Footer } from './components/Footer';
 import { howOldAmI } from './utils';
+import mercavus from './assets/mercavus.png';
 
 export function App() {
   return (
@@ -50,6 +51,13 @@ export function App() {
         </Article>
         <Article>
           <H2 margin='0'>Experience</H2>
+          <Experience
+            src={mercavus}
+            alt='Full Stack Developer at mercavus'
+            title='Full Stack Developer'
+            subtitle='mercavus'
+            date='Jun 2019 – Present · Remote'
+          />
           <Experience
             src={trackforce}
             alt='Full Stack Developer at Trackforce'
