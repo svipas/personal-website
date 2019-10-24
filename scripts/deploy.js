@@ -6,13 +6,7 @@ const Parcel = require('parcel-bundler');
 (async function main() {
   // Remove dist dir
   const distPath = path.resolve('dist');
-  if (fs.existsSync(distPath)) {
-    fs.readdirSync(distPath).forEach(file => {
-      const filePath = path.join(distPath, file);
-      fs.unlinkSync(filePath);
-    });
-    fs.rmdirSync(distPath);
-  }
+  await fs.promises.rmdir(distPath, { recursive: true });
 
   // Bundle application
   process.env.NODE_ENV = 'production';
@@ -30,10 +24,6 @@ const Parcel = require('parcel-bundler');
   fs.copyFileSync(path.resolve('CNAME'), path.join(distPath, 'CNAME'));
 
   // Publish to gh-pages branch
-  ghPages.publish(distPath, err => {
-    if (err) {
-      throw err;
-    }
-    console.log('Published!');
-  });
+  await ghPages.publish(distPath);
+  console.log('Published!');
 })();
