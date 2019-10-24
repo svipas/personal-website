@@ -11,8 +11,6 @@ import { P } from './components/Paragraph';
 import { Text } from './components/Text';
 import profilePhoto from './assets/profile-photo.jpg';
 import githubIcon from './assets/github.svg';
-import twitterIcon from './assets/twitter.svg';
-import mediumIcon from './assets/medium.svg';
 import linkedin from './assets/linkedin.svg';
 import { Experience } from './components/Experience';
 import { Article } from './components/Article';
@@ -35,8 +33,6 @@ export function App() {
         <H1>Benas Svipas</H1>
         <Links>
           <Img src={githubIcon} href='https://github.com/svipas' alt='GitHub' width={28} height={28} />
-          <Img src={twitterIcon} href='https://twitter.com/benas_svipas' alt='Twitter' width={28} height={28} />
-          <Img src={mediumIcon} href='https://medium.com/@svipas' alt='Medium' width={28} height={28} />
           <Img src={linkedin} href='https://www.linkedin.com/in/svipas/' alt='LinkedIn' width={28} height={28} />
         </Links>
       </Header>
