@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const Parcel = require('parcel-bundler');
 
-(async function main() {
+async function main() {
   // Remove dist dir
   const distPath = path.resolve('dist');
   await fs.promises.rmdir(distPath, { recursive: true });
@@ -21,9 +21,11 @@ const Parcel = require('parcel-bundler');
   }).bundle();
 
   // Copy CNAME to dist dir
-  fs.copyFileSync(path.resolve('CNAME'), path.join(distPath, 'CNAME'));
+  await fs.promises.copyFile(path.resolve('CNAME'), path.join(distPath, 'CNAME'));
 
   // Publish to gh-pages branch
   await ghPages.publish(distPath);
   console.log('Published!');
-})();
+}
+
+main();
