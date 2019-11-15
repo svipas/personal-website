@@ -39,25 +39,26 @@ export function App() {
       <Main>
         <Article>
           <P>
-            I'm {howOldAmI()} years old and live in Lithuania. I'm a self-taught <Text bold>Full Stack Developer</Text>{' '}
-            with <Text bold>Professional bachelor's degree in Computer Network Administration</Text>. I really love and
-            feel a lot of passion while coding because I like to solve problems as well as create new functionality.
-            Programming is a part of art where I can express myself.
+            I'm {howOldAmI()} years old and live in Lithuania. I'm a self-taught <Text bold>Software Developer</Text>{' '}
+            with professional bachelor's degree in computer network administration. I really love and feel a lot of
+            passion while coding because I like to solve problems as well as create new functionality. Programming is a
+            part of art where I can express myself. I like: JavaScript, TypeScript, HTML, CSS, Node.js, React, React
+            Native, Electron and Rust.
           </P>
         </Article>
         <Article>
           <H2 margin='0'>Experience</H2>
           <Experience
             src={mercavus}
-            alt='Full Stack Developer at mercavus'
-            title='Full Stack Developer'
+            alt='Software Developer at mercavus'
+            title='Software Developer'
             subtitle='mercavus'
             date='Jun 2019 – Present · Remote'
           />
           <Experience
             src={trackforce}
-            alt='Full Stack Developer at Trackforce'
-            title='Full Stack Developer'
+            alt='Software Developer at Trackforce'
+            title='Software Developer'
             subtitle='Trackforce'
             date='Aug 2018 – May 2019 · 10 mos, Lithuania'
           />
