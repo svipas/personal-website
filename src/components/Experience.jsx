@@ -9,7 +9,9 @@ export function Experience(props) {
     <Section last={props.last}>
       <Img src={props.src} alt={props.alt} width={50} height={50} />
       <Summary last={props.last}>
-        <H3 margin='0'>{props.title}</H3>
+        <H3 margin='0' bold>
+          {props.title}
+        </H3>
         {!!props.subtitle && <Text medium>{props.subtitle}</Text>}
         <Text small color='#65737e'>
           {props.date}

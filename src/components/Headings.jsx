@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 
 const styles = css`
   font-weight: 500;
+  font-weight: ${props => props.bold && '600'};
   color: #eceff4;
   margin: ${props => props.margin || '10px 0'};
 `;
