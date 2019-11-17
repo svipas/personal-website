@@ -70,8 +70,8 @@ export function App() {
           />
           <Experience
             src={harbortouch}
-            alt='Full Stack JavaScript Developer at Harbortouch'
-            title='Full Stack JavaScript Developer'
+            alt='Full Stack Developer at Harbortouch'
+            title='Full Stack Developer'
             subtitle='Harbortouch'
             date='Jul 2017 – Jul 2018 · 1 yr 1 mo, Lithuania'
           />
