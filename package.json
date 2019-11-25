@@ -22,11 +22,11 @@
     "styled-components": "^4.4.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.2",
-    "@babel/preset-react": "^7.7.0",
-    "@types/node": "^12.12.7",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "@types/node": "^12.12.12",
     "babel-plugin-styled-components": "^1.10.6",
-    "eslint": "^6.6.0",
+    "eslint": "^6.7.1",
     "eslint-plugin-react": "^7.16.0",
     "gh-pages": "^2.1.1",
     "parcel-bundler": "^1.12.4"
