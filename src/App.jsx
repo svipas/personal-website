@@ -1,27 +1,28 @@
 import React from 'react';
+import githubIcon from './assets/github.svg';
+import harbortouch from './assets/harbortouch.svg';
+import jsconf from './assets/jsconf.svg';
+import linkedin from './assets/linkedin.svg';
+import mercavus from './assets/mercavus.png';
+import profilePhoto from './assets/profile-photo.jpg';
+import slk from './assets/slk.svg';
+import telia from './assets/telia.svg';
+import trackforce from './assets/trackforce.png';
+import twitterIcon from './assets/twitter.svg';
+import { Article } from './components/Article';
+import { BinaryRain } from './components/BinaryRain';
 import { Container } from './components/Container';
+import { Experience } from './components/Experience';
+import { Footer } from './components/Footer';
 import { GlobalStyle } from './components/GlobalStyle';
 import { Header } from './components/Header';
-import { BinaryRain } from './components/BinaryRain';
-import { Img } from './components/Img';
 import { H1, H2 } from './components/Headings';
+import { Img } from './components/Img';
 import { Links } from './components/Links';
 import { Main } from './components/Main';
 import { P } from './components/Paragraph';
 import { Text } from './components/Text';
-import profilePhoto from './assets/profile-photo.jpg';
-import githubIcon from './assets/github.svg';
-import linkedin from './assets/linkedin.svg';
-import { Experience } from './components/Experience';
-import { Article } from './components/Article';
-import trackforce from './assets/trackforce.png';
-import jsconf from './assets/jsconf.svg';
-import harbortouch from './assets/harbortouch.svg';
-import telia from './assets/telia.svg';
-import slk from './assets/slk.svg';
-import { Footer } from './components/Footer';
 import { howOldAmI } from './utils';
-import mercavus from './assets/mercavus.png';
 
 export function App() {
   return (
@@ -33,6 +34,7 @@ export function App() {
         <H1>Benas Svipas</H1>
         <Links>
           <Img src={githubIcon} href='https://github.com/svipas' alt='GitHub' width={28} height={28} />
+          <Img src={twitterIcon} href='https://twitter.com/benas_svipas' alt='Twitter' width={28} height={28} />
           <Img src={linkedin} href='https://www.linkedin.com/in/svipas/' alt='LinkedIn' width={28} height={28} />
         </Links>
       </Header>

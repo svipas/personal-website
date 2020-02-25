@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Links = styled.div`
-  width: 80px;
+  width: 120px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 `;
