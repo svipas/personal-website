@@ -45,7 +45,7 @@ export function App() {
             with professional bachelor's degree in computer network administration. I really love and feel a lot of
             passion while coding because I like to solve problems as well as create new functionality. Programming is a
             part of art where I can express myself. <Text bold>I'm using:</Text> JavaScript, TypeScript, HTML, CSS,
-            Node.js, React, React Native and Electron.
+            Node.js, React, React Native, Electron, Go, Flutter and Dart.
           </P>
         </Article>
         <Article>
